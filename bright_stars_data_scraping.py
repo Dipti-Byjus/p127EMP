@@ -63,13 +63,13 @@ def scrape():
 
        
 # Calling Method    
-scrape()
+
 
 ################################################################
 
 # IMPORT DATA to CSV
 
-stars_data = []
+
 
 
 for i in range(0,len(scarped_data)):
@@ -87,10 +87,9 @@ print(stars_data)
 
 
 # Define Header
-headers = ['Star_name','Distance','Mass','Radius','Luminosity']  
+
 
 # Define pandas DataFrame   
-star_df_1 = pd.DataFrame(stars_data, columns=headers)
 
 #Convert to CSV
 star_df_1.to_csv('scraped_data.csv',index=True, index_label="id")
